@@ -1,0 +1,7 @@
+.idea
+.DS_Store
+.vscode/*
+!.vscode/launch.json
+node_modules
+.eslintcache
+dist/
