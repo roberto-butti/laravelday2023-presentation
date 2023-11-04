@@ -210,11 +210,21 @@ dataset("input1", [
 </Slide>
 
 <Slide animate>
+
+
 	<Fit>Architettura del Software</Fit>
 	<Quote>L'architettura del software si riferisce alla struttura organizzativa e al design fondamentale di un sistema software, che comprende componenti, moduli, interfacce e le relazioni tra di essi.</Quote>
 	<p class="text-sm">https://pestphp.com/docs/arch-testing</p>
 </Slide>
 
+<Slide animate>
+
+	<Fit>PestPHP: Architecture Testing</Fit>
+	<Image
+	src="pest-architecture-testing.png"
+	alt="Pest PHP architecture testing" />
+
+</Slide>
 
 <Slide animate>
 	<Fit>PestPHP: Architecture Testing</Fit>
