@@ -5,6 +5,7 @@
 	import SubHeadline from './components/subheadline.svelte'
 	import Item from './components/item.svelte'
 	import Subheadline from './components/subheadline.svelte'
+	import Image from './components/image.svelte'
 </script>
 
 <Slide animate>
@@ -32,19 +33,28 @@
 <Slide animate>
 	<Fit>Strumenti per la diagnostica</Fit>
 	<SubHeadline>Telescope</SubHeadline>
-	<img src="https://laravel.com/img/docs/telescope-example.png" alt="Telescope" />
+	<Image
+		src="https://laravel.com/img/docs/telescope-example.png"
+		alt="Telescope"
+		height="" />
 </Slide>
 
 <Slide animate>
 	<Fit>Strumenti per la diagnostica</Fit>
 	<SubHeadline>Horizon</SubHeadline>
-	<img src="https://laravel.com/img/docs/horizon-example.png" alt="horizon" />
+	<Image
+		src="https://laravel.com/img/docs/horizon-example.png"
+		alt="Horizon"
+		height="" />
 </Slide>
 <Slide animate>
 	<Fit>Strumenti per la diagnostica</Fit>
 	<SubHeadline>Xdebug</SubHeadline>
+	<Image
+		src="https://cdn.hashnode.com/res/hashnode/image/upload/v1677943557435/177269f4-0d15-4eaf-9fc6-f918602d0fdc.png?auto=compress,format&format=webp"
+		alt="xdebug"
+		height="" />
 
-	<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1677943557435/177269f4-0d15-4eaf-9fc6-f918602d0fdc.png?auto=compress,format&format=webp" alt="xdebug" />
 </Slide>
 
 <Slide animate>
