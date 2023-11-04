@@ -28,7 +28,7 @@
 	export let video: String = null
 	export let iframe: String = null
 	export let interactive: Bool = null
-	export let transition: Transition = null
+	export let transition: Transition = "slide"
 
 	const dispatch = createEventDispatcher()
 	const slideIndex = index++
