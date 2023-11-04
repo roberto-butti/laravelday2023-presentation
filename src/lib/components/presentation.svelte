@@ -79,6 +79,9 @@
 	<div class="slides">
 		<slot />
 	</div>
+	<div class="p-4 w-full text-base">
+		<img class="w-24"  src="https://www.grusp.org/wp-content/uploads/2021/04/2.png" alt="Laravelday 2023"  />
+	</div>
 
 
 </div>
