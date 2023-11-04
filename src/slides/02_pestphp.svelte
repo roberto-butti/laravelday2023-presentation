@@ -5,6 +5,7 @@
 	import Fit from '@lib/components/fit.svelte'
 	import Cover from './components/cover.svelte'
 	import Quote from './components/quote.svelte'
+	import Image from './components/image.svelte'
 </script>
 <Slide>
     <Subheadline>Deploy del Venerdí?</Subheadline>
@@ -28,7 +29,11 @@
 </Slide>
 <Slide>
     <Fit>Tipologie di Team</Fit>
-	<img src="public/teams.png" alt="Tipologie di teams"/>
+	<Image
+		src="teams.png"
+		alt="Tipologie di teams"
+		height="" />
+
 </Slide>
 
 <Slide>
@@ -237,4 +242,30 @@ test('to be final')
     ->not->toBeFinal();
         `}
 	</Code>
+</Slide>
+<Slide animate>
+	<Fit>PestPHP: Architecture Testing</Fit>
+	<Subheadline>Le classi di un certo tipo hanno uno specifico metodo?</Subheadline>
+	<Code  lang="php">
+		{`
+test('make')
+    ->expect('HiFolks\\Statistics\\Statistics')
+    ->toHaveMethod('make');
+        `}
+	</Code>
+	<p class="text-sm">E' anche vero che una regola di questo tipo puo' essere risolta a livello di definizione di interfacce</p>
+</Slide>
+
+<Slide animate>
+	<Fit>PestPHP: Architecture Testing</Fit>
+	<Subheadline>Le classi di un certo tipo hanno il metodo __construct() e __destruct() ?</Subheadline>
+	<Code  lang="php">
+		{`
+test('constructor')
+    ->expect('HiFolks\\Statistics\\Statistics')
+    ->toHaveConstructor()
+    ->toHaveDestructor();
+        `}
+	</Code>
+
 </Slide>
