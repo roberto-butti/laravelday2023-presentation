@@ -4,6 +4,7 @@
 	import Item from './components/item.svelte'
 	import Fit from '@lib/components/fit.svelte'
 	import Cover from './components/cover.svelte'
+	import Quote from './components/quote.svelte'
 </script>
 <Slide>
     <Subheadline>Deploy del Venerdí?</Subheadline>
@@ -199,6 +200,41 @@ dataset("input1", [
     [ "medianLow", [1, 3, 5], 3],
     [ "medianLow", [1, 3, 5, 7], 3],
 ]);
+        `}
+	</Code>
+</Slide>
+
+<Slide animate>
+	<Fit>Architettura del Software</Fit>
+	<Quote>L'architettura del software si riferisce alla struttura organizzativa e al design fondamentale di un sistema software, che comprende componenti, moduli, interfacce e le relazioni tra di essi.</Quote>
+	<p class="text-sm">https://pestphp.com/docs/arch-testing</p>
+</Slide>
+
+
+<Slide animate>
+	<Fit>PestPHP: Architecture Testing</Fit>
+	<Subheadline>Se volessimo evitare di utilizzare funzioni di "debug" in produzione</Subheadline>
+
+	<Code  lang="php">
+		{`
+test('ensures no debugging')
+    ->expect(['dd', 'dump', 'echo', 'print_r'])
+    ->not->toBeUsed();
+
+        `}
+	</Code>
+</Slide>
+
+<Slide animate>
+	<Fit>PestPHP: Architecture Testing</Fit>
+	<Subheadline>Final o Non Final, questo é il problema. (Amleto nel 2023)</Subheadline>
+
+	<Code  lang="php">
+		{`
+test('to be final')
+    ->expect('HiFolks\\Statistics')
+    ->classes()
+    ->not->toBeFinal();
         `}
 	</Code>
 </Slide>
