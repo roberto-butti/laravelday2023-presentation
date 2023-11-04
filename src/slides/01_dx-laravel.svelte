@@ -8,7 +8,8 @@
 </script>
 
 <Slide animate>
-	<Fit>Laravel e Developer eXperience</Fit>
+	<Fit>Laravel e</Fit>
+	<Fit>Developer eXperience</Fit>
 	<Quote>Esistono strumenti nell'ecosistema Laravel che mi permettono di avere una
 		buona esperienza di sviluppo?</Quote>
 </Slide>
