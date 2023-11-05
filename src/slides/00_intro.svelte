@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { Notes, Slide, Code } from '@components'
-	import Bio from './components/bio.svelte'
 	import Fit from '@lib/components/fit.svelte'
 	import Quote from './components/quote.svelte'
 	import Cover from './components/cover.svelte'

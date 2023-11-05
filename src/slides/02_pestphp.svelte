@@ -210,6 +210,83 @@ dataset("input1", [
 </Slide>
 
 <Slide animate>
+	<Fit>PestPHP: copertura dei test</Fit>
+
+	<Code  lang="shell">
+		{`
+vendor/bin/pest --coverage
+
+        `}
+	</Code>
+	<Image src="coverage.png"
+	alt="Test Coverage"
+	height=""
+	/>
+</Slide>
+<Slide animate>
+	<Fit>Unit tests sono sufficienti?</Fit>
+	<Image src="unit_vs_integration_tests.gif"
+	alt="Unit tests VS integration test"
+	height=""
+	/>
+</Slide>
+<Slide animate>
+	<Subheadline>Teoria</Subheadline>
+
+	<Quote><b>Test funzionali</b>: Per verificare che il software funzioni come dovrebbe in una situazione reale e che soddisfi i requisiti dell'utente.</Quote>
+
+	<Quote><b>Test di integrazione</b>: Per testare la funzionalità di un gruppo di moduli diversi e capire come interagiscono tra loro.</Quote>
+
+</Slide>
+<Slide animate>
+	<Subheadline>Terminologia Laravel</Subheadline>
+
+	<Quote><b>Feature tests</b>: per testare il modo in cui diversi oggetti interagiscono tra loro o persino una richiesta HTTP completa a un endpoint JSON o l'interazione con un View Component.</Quote>
+
+	<Quote><b>Browser test</b>: per testare la funzionalita' tramite l'interazione automatizzata con un browser web (Laravel Dusk).</Quote>
+
+</Slide>
+<Slide animate>
+	<Subheadline>Feature test</Subheadline>
+	<Image src="https://github.com/Hi-Folks/gh-actions-yaml-generator/raw/develop/github-actions-generator-laravel.png"
+	alt="Screenshot di una form molto complessa" height="h-full" />
+</Slide>
+
+<Slide animate>
+	<Subheadline>Feature test</Subheadline>
+	<Code  lang="php" lines="1-12|3-8|9|10">
+		{`
+test('form_submit_test_matrix')
+    ->livewire(ConfiguratorForm())
+    ->set('name', 'Test')
+    ->set('manualTrigger', false)
+    ->set('onPush', true)
+    ->set('matrixLaravel', true)
+    ->set('matrixLaravelVersions', ['8.*' => '8.*'])
+    ->set('stepPhpVersions', ['8.0', '7.4'])
+    ->call('submitForm')
+    ->assertSee(readAsset('on-push-branches.yaml'))
+    ->assertSee(readAsset('mysql-service.yaml'))
+    ->assertSee(readAsset('strategy-php-8-74.yaml'));
+        `}
+	</Code>
+</Slide>
+<Slide animate>
+	<Subheadline>Feature test</Subheadline>
+	<Code  lang="php">
+		{`
+name: Test
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - features/**
+        `}
+	</Code>
+</Slide>
+
+<Slide animate>
 
 
 	<Fit>Architettura del Software</Fit>
@@ -264,6 +341,14 @@ test('make')
         `}
 	</Code>
 	<p class="text-sm">E' anche vero che una regola di questo tipo puo' essere risolta a livello di definizione di interfacce</p>
+	<Code  lang="php">
+		{`
+test('make')
+    ->expect('HiFolks\\Statistics\\Statistics')
+    ->toImplement('HiFolks\\Statistics\\Contracts\\ShouldMake');
+        `}
+	</Code>
+
 </Slide>
 
 <Slide animate>
