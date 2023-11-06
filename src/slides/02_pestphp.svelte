@@ -8,11 +8,11 @@
 	import Image from './components/image.svelte'
 </script>
 <Slide>
-    <Subheadline>Deploy del Venerdí?</Subheadline>
+    <Subheadline>Deploy del Venerdì?</Subheadline>
 	<Subheadline>Soluzioni:</Subheadline>
-	<Item>💡 Vietiamo il deploy al Venerdí 💡</Item>
-	<Item>💡💡 Vietiamo il deploy al pomeriggio 💡💡</Item>
-	<Item>💡💡💡 Vietiamo il deploy al mattino 💡💡💡</Item>
+	<Item>💡 Vietiamo il deploy al Venerdì 💡</Item>
+	<Item>💡💡 Vietiamo il deploy tutti i giorni al pomeriggio 💡💡</Item>
+	<Item>💡💡💡 Vietiamo il deploy tutti i giorni al mattino 💡💡💡</Item>
 	<Item>🤯 Ok non effettuiamo mai il deploy 🤯</Item>
 </Slide>
 
