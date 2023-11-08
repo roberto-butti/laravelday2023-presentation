@@ -12,11 +12,11 @@
 		headline="Roberto Butti"
 		subheadline="Developer Relations Engineer"
 		title="Vivere serenamente con Laravel"
-		subtitle="Un viaggio nella Developer eXperience dell'ecosistema di Laravel">
+		subtitle="Un viaggio nella Developer eXperience dell'ecosistema Laravel">
 
 	</Cover>
 	<Notes>
-		<b>Avoid eye contact.</b>
+		<b>Vai veloce su questo.</b>
 	</Notes>
 </Slide>
 <Slide animate>
@@ -49,7 +49,7 @@ $bio = [
         [
             "name" => "Some Drops of PHP",
             "url" => "https://drops-of-php.hi-folks.dev/"
-            "description" => "The opensoruce book"
+            "description" => "The open-source book"
         ],
     ],
     "books" => [
@@ -68,12 +68,18 @@ $bio = [
 </Slide>
 <Slide animate>
 	<Fit>Developer eXperience</Fit>
+    	<Notes>
+		<b>Oggi parliamo di Developer experience.</b>
+	</Notes>
 </Slide>
 
 <Slide animate>
 	<Fit>Developer eXperience</Fit>
 	<Quote>
-		é la sensazione, é quel feeling, che come Developers proviamo con l'utilizzo
+		é la sensazione, é il feeling, che come Developers proviamo con l'utilizzo
 		di uno strumento
 	</Quote>
+    <Notes>
+		<b>Che cos'e' la developer experience, provo a dare una mia personale definizione.</b>
+	</Notes>
 </Slide>
