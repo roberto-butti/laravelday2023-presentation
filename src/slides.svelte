@@ -5,6 +5,7 @@
 	import PestPHP from './slides/02_pestphp.svelte'
 	import Codeanalysis from './slides/03_codeanalysis.svelte';
 	import Refactor from './slides/04_refactor.svelte'
+	import Recap from './slides/05_recap.svelte'
 </script>
 
 <Presentation>
@@ -13,4 +14,5 @@
 	<PestPHP />
 	<Codeanalysis />
 	<Refactor />
+	<Recap />
 </Presentation>
