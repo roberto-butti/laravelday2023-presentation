@@ -23,11 +23,19 @@
 	<Item>Bootcamp: https://bootcamp.laravel.com/</Item>
 	<Item>Laracast: https://laracasts.com/</Item>
 	<Item>e molto altro</Item>
+	<Notes>
+		<b>La documentazione e' quell'elemento che ci rende consdapevoli che a fronte di una nuova implementazione, possiamo trovare le informazioni necessarie.
+			sappiamo che non saremo soli e persi.
+		</b>
+	</Notes>
 </Slide>
 <Slide animate>
 	<Fit>Strumenti per la diagnostica</Fit>
 	<SubHeadline>Elementi per capire quello che sta succedendo durante l'esperienza di
 		sviluppo.</SubHeadline>
+    <Notes>
+		<b>La diagnostica ci permette di avere il controllo della situazione, avere il polso di cio' che sta succedendo sotto al cofano.</b>
+	</Notes>
 </Slide>
 
 <Slide animate>
@@ -37,6 +45,11 @@
 		src="https://laravel.com/img/docs/telescope-example.png"
 		alt="Telescope"
 		height="" />
+    <Notes>
+		Telescope ci permette di analizzare le chiamate HTTP, le queries, eccetera.
+			esistono molti strumenti analoghi a Telescope. Cito Telescope perche' e' sotto al cappello laravel.com
+
+	</Notes>
 </Slide>
 
 <Slide animate>

@@ -13,8 +13,8 @@
 <Subheadline>Recap /  riepilogo</Subheadline>
 <Subheadline>Abbiamo visto</Subheadline>
 <Item>Strumenti per la Developer Experience</Item>
-<Item>Analizzato la DX dopo aver interagito con gli Sturmenti Laravel</Item>
-<Item>Come aumentaRe la confidenza nel prodotto rilasciato</Item>
+<Item>Analizzato la DX anche dopo lo sviluppo</Item>
+<Item>Come migliorare il rapporto di fiducia con quello che rilasciamo</Item>
 <Item>Testing</Item>
 <Item>Test dell'architettura del software</Item>
 <Item>Analisi del codice</Item>

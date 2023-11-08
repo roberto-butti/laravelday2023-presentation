@@ -68,7 +68,7 @@ $bio = [
 </Slide>
 <Slide animate>
 	<Fit>Developer eXperience</Fit>
-    	<Notes>
+    <Notes>
 		<b>Oggi parliamo di Developer experience.</b>
 	</Notes>
 </Slide>
