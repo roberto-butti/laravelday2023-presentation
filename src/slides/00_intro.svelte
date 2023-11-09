@@ -30,7 +30,7 @@ $bio = [
     "company" => "Storyblok",
     "conferences" => [
         [
-            "name" => "PHPday Grusp Edition",
+            "name" => "PHPday PUG Edition",
             "year" => 2022,
             "topic" => "Perché PHP"
         ],
